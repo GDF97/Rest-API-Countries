@@ -11,3 +11,7 @@ Tech Stack
 Todo
 
 - [ ] Tudo, falta tudo
+- [ ] Responsividade
+- [ ] Suporte para light theme
+- [ ] Arrumar os tipos e o consumo da api
+- [ ] Aprender TypesScript ☺
