@@ -1,0 +1,75 @@
+@import "../variables";
+@import "../mixins";
+
+.CountryDetailsWrapper {
+  width: 100%;
+  padding: 4rem;
+  @include flex(column, start, start);
+  gap: 4rem;
+
+  a {
+    width: 175px;
+    padding: 0.75rem;
+    font-size: 18px;
+    color: white;
+    background-color: $DarkBlue;
+    border: none;
+    border-radius: 8px;
+    @include flex(row, center, center);
+    gap: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.242);
+    text-decoration: none;
+  }
+
+  .CountryInfos {
+    width: 100%;
+    @include flex(row, center, start);
+    gap: 10rem;
+
+    img {
+      width: 725px;
+      height: 475px;
+      object-fit: cover;
+    }
+
+    .cansei {
+      @include flex(column, start, start);
+      gap: 4rem;
+      color: white;
+
+      .infos-wrapper {
+        width: 100%;
+        @include flex(row, center, start);
+        gap: 6rem;
+      }
+
+      .left,
+      .right {
+        p {
+          padding-bottom: 1rem;
+
+          strong {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .borderCountries {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .border {
+          min-width: 150px;
+          padding: 0.5rem;
+          background-color: $DarkBlue;
+          text-align: center;
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.242);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

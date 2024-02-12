@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixins";
+
+.header {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  background-color: $DarkBlue;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.286);
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: $White;
+  }
+
+  @media screen and (max-width: 400px) {
+    justify-content: center;
+  }
+}
