@@ -7,9 +7,14 @@
   width: 350px;
   min-height: 450px;
   border-radius: 8px;
-  background-color: $DarkBlue;
   @include flex(column, start, start);
   gap: 2rem;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 10px 4px 1px rgba(0, 0, 0, 0.061);
+    transform: translateY(-10px);
+  }
 
   .country_flag {
     width: 100%;
@@ -21,7 +26,6 @@
     padding: 0 2rem;
     @include flex(column, start, start);
     gap: 0.5rem;
-    color: white;
 
     h3 {
       font-size: 24px;

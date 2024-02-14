@@ -22,3 +22,79 @@
     gap: 4rem;
   }
 }
+
+.home-container.dark {
+  .SearchInput {
+    background-color: $DarkBlue;
+
+    input {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+
+  .filterButton {
+    background-color: $DarkBlue;
+
+    .currentRegion {
+      color: white;
+    }
+
+    .regions.open {
+      background-color: $DarkBlue;
+    }
+
+    button {
+      color: white;
+    }
+  }
+
+  .CountryCard {
+    background-color: $DarkBlue;
+
+    .country_info {
+      color: $White;
+    }
+  }
+}
+
+.home-container.light {
+  .SearchInput {
+    background-color: $White;
+
+    input {
+      color: $DarkGray;
+    }
+
+    p {
+      color: $DarkGray;
+    }
+  }
+
+  .filterButton {
+    background-color: $White;
+
+    .currentRegion {
+      color: $VeryDarkBlueText;
+    }
+
+    .regions.open {
+      background-color: $White;
+    }
+
+    button {
+      color: $VeryDarkBlueText;
+    }
+  }
+
+  .CountryCard {
+    background-color: $White;
+
+    .country_info {
+      color: $VeryDarkBlueText;
+    }
+  }
+}

@@ -1,14 +1,17 @@
 import { Link, useParams } from "react-router-dom";
 import { useApi } from "../hooks/useApi";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CountryType } from "../types/CountryType";
 import "../scss/pages/CountryDetails.scss";
 import { ArrowLeft } from "lucide-react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const CountryDetails = () => {
   const api = useApi();
 
   const { country } = useParams();
+
+  const { theme } = useContext(ThemeContext);
 
   const countryParsed = country ? country.toString() : "";
 
@@ -51,7 +54,7 @@ const CountryDetails = () => {
   }, [countryParsed]);
 
   return (
-    <div className="CountryDetailsWrapper">
+    <div className={`CountryDetailsWrapper ${theme}`}>
       <Link to={"/"}>
         <ArrowLeft />
         Back

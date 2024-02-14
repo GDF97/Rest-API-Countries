@@ -10,8 +10,9 @@ Tech Stack
 
 Todo
 
-- [ ] Tudo, falta tudo
-- [ ] Responsividade
-- [ ] Suporte para light theme
+- [x] Responsividade
+- [x] Suporte para light theme
 - [ ] Arrumar os tipos e o consumo da api
 - [ ] Aprender TypesScript ☺
+
+<img src="./src/assets/design/desktop-preview.jpg">

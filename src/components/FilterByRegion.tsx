@@ -14,11 +14,7 @@ const FilterByRegion = ({ changeRegion }: ChangeRegionType) => {
     <div className="filterButton">
       <p className="currentRegion" onClick={() => setOpen(!open)}>
         {currentRegion == "" ? "Filter By Region" : currentRegion}
-        {open ? (
-          <ChevronUp size={18} color="white" />
-        ) : (
-          <ChevronDown size={18} color="white" />
-        )}
+        {open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
       </p>
       <div className={`regions ${open ? "open" : ""}`}>
         {currentRegion != "Africa" && (

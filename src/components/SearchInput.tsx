@@ -16,7 +16,7 @@ const SearchInput = ({ handleSearch }: SearchInputType) => {
         }}
       />
       <p>
-        <Search color="white" size={18} />
+        <Search size={18} />
         Search for a country...
       </p>
     </div>

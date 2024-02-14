@@ -5,7 +5,6 @@
   position: relative;
   width: 500px;
   height: 50px;
-  background-color: $DarkBlue;
   border-radius: 4px;
 
   input {
@@ -14,7 +13,6 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: white;
     padding-left: 1rem;
     font-size: 16px;
 
@@ -34,7 +32,6 @@
     transform: translateY(-50%);
     position: absolute;
     @include flex(row, center, center);
-    color: white;
     gap: 1rem;
     pointer-events: none;
   }

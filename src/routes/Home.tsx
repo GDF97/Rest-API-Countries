@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import CountryCard from "../components/CountryCard";
 import FilterByRegion from "../components/FilterByRegion";
 import SearchInput from "../components/SearchInput";
 import "../scss/pages/Home.scss";
 import { useApi } from "../hooks/useApi";
 import { CountryType } from "../types/CountryType";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const Home = () => {
   const api = useApi();
+
+  const { theme } = useContext(ThemeContext);
 
   const [countries, setCountries] = useState<Array<CountryType> | null>();
   const [region, setRegion] = useState("");
@@ -88,7 +91,7 @@ const Home = () => {
   }, [region, countryName]);
 
   return (
-    <div className="home-container">
+    <div className={`home-container ${theme}`}>
       <div className="home-top">
         <SearchInput handleSearch={handleSearch} />
         <FilterByRegion changeRegion={changeRegion} />
